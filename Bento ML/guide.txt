@@ -1,0 +1,22 @@
+make an environment: 
+	conda create -p venv python==3.9 -y
+
+activate environment:
+	conda activate venv/
+use environment 
+	cls
+install requirements.txt:
+	pip install -r requirements.txt
+
+saved the model:
+	python train.py
+
+
+List the model command
+	bentoml models list
+
+Run the service.py:
+	bentoml serve service.py:svc --reload
+
+bento yaml file run:
+	bentoml build
